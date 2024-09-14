@@ -19,7 +19,7 @@ class LinkedList:
                 current = current.next
             current.next = new_node  # Link the last node to the new node
 
-    # Print the entire list in a readable format
+  
     def print_list(self):
         current = self.head  # Start from the head node
         while current:
@@ -27,7 +27,7 @@ class LinkedList:
             current = current.next  # Move to the next node
         print("None")  # End of the list
 
-    # Delete the first node with the given data
+
     def delete(self, data):
         current = self.head
 
