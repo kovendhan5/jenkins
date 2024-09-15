@@ -53,8 +53,6 @@ class LinkedList:
 
 # Create a new linked list
 linked_list = LinkedList()
-
-# Add elements to the linked list
 linked_list.append(10)
 linked_list.append(20)
 linked_list.append(30)
