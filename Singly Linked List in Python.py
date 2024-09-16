@@ -39,18 +39,17 @@ class LinkedList:
         # Search for the node to be deleted, keep track of the previous node
         prev = None
         while current and current.data != data:
-            prev = current  # Move the previous pointer to current
-            current = current.next  # Move to the next node
+            prev = current  
+            current = current.next  
 
-        # If the data was not found
         if current is None:
             return
 
-        # Unlink the node from the linked list
+        # Unlink the node
         prev.next = current.next
-        current = None  # Free the memory of the deleted node
+        current = None  
 
-# Create a new linked list
+
 linked_list = LinkedList()
 linked_list.append(10)
 linked_list.append(20)
