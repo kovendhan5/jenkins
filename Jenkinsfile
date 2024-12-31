@@ -1,13 +1,31 @@
-/*Jenkinsfile */
-/* Requires Docker Pipeline plugin */
 pipeline {
-    agent { docker { image 'python:3.13.0-alpine3.20' } }
+    agent any
     stages {
-        stage('build') {
+        stage('Clone Repository') {
             steps {
-                sh 'python --version'
+                git 'https://github.com/kovendhan5/jenkins.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'mvn clean install'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        stage('Deploy to Staging') {
+            steps {
+                sh 'scp target/your-app.jar user@staging-server:/path/to/deploy'
+            }
+        }
+        stage('Deploy to Production') {
+            steps {
+                input 'Deploy to production?'
+                sh 'scp target/your-app.jar user@production-server:/path/to/deploy'
             }
         }
     }
 }
-
