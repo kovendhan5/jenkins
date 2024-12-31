@@ -16,15 +16,21 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t kovendhan-jenkins .'
+            }
+        }
         stage('Deploy to Staging') {
             steps {
-                sh 'scp target/your-app.jar user@staging-server:/path/to/deploy'
+                sh 'docker run -d -p 8081:8080 --name staging-container kovendhan-jenkins'
             }
         }
         stage('Deploy to Production') {
             steps {
                 input 'Deploy to production?'
-                sh 'scp target/your-app.jar user@production-server:/path/to/deploy'
+                sh 'docker stop staging-container && docker rm staging-container'
+                sh 'docker run -d -p 8080:8080 --name production-container kovendhan-jenkins'
             }
         }
     }
