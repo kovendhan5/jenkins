@@ -3,3 +3,6 @@ target/
 *.tmp
 .idea/
 *.iml
+# Ignore Docker files
+*.log
+
