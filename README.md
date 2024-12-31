@@ -19,6 +19,9 @@ Jenkins is an open-source automation server that helps automate parts of the sof
 - Configure jobs for building, testing, and deploying applications.
 - Secure and optimize Jenkins.
 
+### About the Author
+Hi, I'm Kovendhan! I am currently learning about Jenkins and exploring its real-time applications. As part of my journey, I created this repository to document my learning process and share practical examples and setups with others. I hope this helps anyone looking to get started with Jenkins.
+
 ## Features
 - **Setup Instructions**: Detailed steps to install and configure Jenkins.
 - **Pipeline Examples**: Ready-to-use Jenkins pipeline scripts (Declarative and Scripted).
