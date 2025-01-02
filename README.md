@@ -22,7 +22,18 @@ Jenkins is an open-source automation server that helps automate parts of the sof
 ### About the Author
 Hi, I'm Kovendhan! I am currently learning about Jenkins and exploring its real-time applications. As part of my journey, I created this repository to document my learning process and share practical examples and setups with others. I hope this helps anyone looking to get started with Jenkins.
 
-## Pipeline Overview The pipeline is configured with the following stages: 1. **Clone Repository**: Clones the GitHub repository to the Jenkins workspace. 2. **Build**: Uses Maven to clean and install the project. 3. **Test**: Runs Maven tests to ensure the application works as expected. 4. **Build Docker Image**: Builds a Docker image from the project using the Dockerfile. 5. **Deploy to Staging**: Deploys the Docker container in a staging environment on port 8081. 6. **Deploy to Production**: Deploys the Docker container in the production environment on port 8080 after manual approval. ## Achievements - **First Successful Pipeline**: This is my first pipeline that has successfully completed all stages, with the output displayed as "Hello, World!" in the logs. The container runs correctly and can be accessed on the specified ports. - **Production-Ready**: The same pipeline configuration can now be used to deploy the application to production.
+## Pipeline Overview The pipeline is configured with the following stages: 
+1. **Clone Repository**: Clones the GitHub repository to the Jenkins workspace.
+2. **Build**: Uses Maven to clean and install the project.
+3. **Test**: Runs Maven tests to ensure the application works as expected.
+4. **Build Docker Image**: Builds a Docker image from the project using the Dockerfile.
+5. **Deploy to Staging**: Deploys the Docker container in a staging environment on port 8081.
+6. **Deploy to Production**: Deploys the Docker container in the production environment on port 8080 after manual approval.
+
+## Achievements 
+- **First Successful Pipeline**: This is my first pipeline that has successfully completed all stages, with the output displayed as "Hello, World!" in the logs. The container runs correctly and can be accessed on the specified ports.
+- **Production-Ready**: The same pipeline configuration can now be used to deploy the application to production.
+
 ## Features
 - **Setup Instructions**: Detailed steps to install and configure Jenkins.
 - **Pipeline Examples**: Ready-to-use Jenkins pipeline scripts (Declarative and Scripted).
