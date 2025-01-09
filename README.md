@@ -3,7 +3,7 @@
 Welcome to the Jenkins repository! This project focuses on setting up, managing, and demonstrating the capabilities of Jenkins for Continuous Integration and Continuous Deployment (CI/CD) pipelines.
 
 ## Table of Contents
-- [Introduction](#introduction)
+- [Introduction](#introduction) 
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
