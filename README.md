@@ -12,7 +12,7 @@ Welcome to the Jenkins repository! This project focuses on setting up, managing,
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
+## Introduction 
 
 Jenkins is an open-source automation server that helps automate parts of the software development process. This repository demonstrates how to:
 - Set up Jenkins on various environments.
