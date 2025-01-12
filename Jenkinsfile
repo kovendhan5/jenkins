@@ -30,7 +30,7 @@ pipeline {
             steps {
                 input 'Deploy to production?'
                 bat 'docker stop staging-container && docker rm staging-container'
-                bat 'docker run -d -p 8080:8080 --name production-container kovendhan-jenkins'
+                bat 'docker run -d -p 8081:8080 --name production-container kovendhan-jenkins'
             }
         }
     }
