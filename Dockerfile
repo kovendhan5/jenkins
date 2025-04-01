@@ -19,3 +19,4 @@ COPY --from=build /app/target/kovendhan-jenkins-1.0-SNAPSHOT.jar kovendhan-jenki
 EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "kovendhan-jenkins.jar"]
+
